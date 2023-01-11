@@ -1,0 +1,50 @@
+body {
+    background-color: black;
+    color: white;
+    padding: 5px;
+  }
+.contentBox {
+    background-color: purple;
+    color: white;
+    min-width: 10em;
+    min-height: 10em;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-top: 2em;
+  }
+.contentBox h1 {
+    color: white; 
+    margin-right: 10px;
+}
+
+.contentBox h2 {
+    margin-right: 10px;
+}
+  
+.frame {    
+    display: flex; /* Use flexbox layout */
+}
+.imageBox{
+    width: 50%; /* Set the width of the image container to 50% of the frame */
+    order: 2;
+    align-self: flex-end;
+    margin-left: 10em;
+    justify-self: flex-end;
+}
+.content-container {
+width: 50%; /* Set the width of the content container to 50% of the frame */
+order: 0;
+}
+.contentBox img {
+    max-width: 20em;
+    max-height: 20em;
+    justify-self: flex-start;
+    align-self: flex-end;
+}
+.choose {
+    text-align: center;
+}
+form {
+    border: solid 1px purple;
+}
