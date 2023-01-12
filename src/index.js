@@ -10,8 +10,10 @@ const api = {
     key: "b3ff6cab5334264ebf3515ac12ae43a0",
     base: "https://api.openweathermap.org/data/2.5/"
 }
-let imageBox = document.querySelector('.image-box');
-imageBox.innerHTML = weather;
+let imageBox = document.querySelector('.imageBox');
+let weatherPic = document.createElement('img');
+weatherPic.src = weather;
+imageBox.appendChild(weatherPic);
 const contentBox = document.querySelector('.contentBox');
 async function weatherReport(city) { 
     contentBox.innerHTML = '';
