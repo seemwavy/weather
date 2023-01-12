@@ -4,11 +4,14 @@ import rain from './rain.jpg';
 import snow from './snow.png';
 import thunderstorm from './thunderstorm.jpg';
 import tornado from './tornado.jpg';
-
+import weather from './weather.jpg';
+import './styles.css';
 const api = { 
     key: "b3ff6cab5334264ebf3515ac12ae43a0",
     base: "https://api.openweathermap.org/data/2.5/"
 }
+let imageBox = document.querySelector('.image-box');
+imageBox.innerHTML = weather;
 const contentBox = document.querySelector('.contentBox');
 async function weatherReport(city) { 
     contentBox.innerHTML = '';
